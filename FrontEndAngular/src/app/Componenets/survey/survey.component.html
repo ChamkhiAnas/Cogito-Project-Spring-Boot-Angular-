@@ -1,0 +1,1131 @@
+<div class="container">
+
+    <div class="circle">
+        <p  id="circleP">{{indexOf}}/13</p>
+        <img  id="contour" src=".././../../assets/contour.png">
+
+    </div>
+
+        <div class="logContain">
+        <h6 (click)="previous()">Back</h6>
+        <img src="../../../assets/right-arrow.png" (click)="previous()">
+        </div>
+        <p id="logContainP">Hi,<span id="user">{{user}}!</span></p>
+
+
+    <div class="container2">
+
+     <form  [formGroup]="prefVegies" (ngSubmit)="Veggies()"  (ngSubmit)="next()">
+
+    <div class="Q1" *ngIf="indexOf==1">
+
+
+
+        <br>
+        
+        <div id="firstLine"></div>
+        <h1 id="question">What  veggies  are  your favorites?</h1>
+        <h6 id="question-slc">Select your favorites </h6>
+
+            <div class="form-scroll">
+
+                <div class="checkboxContain">
+                    <div class="imageSupport"><img src="../../../assets/Q1/carrot.png" alt="">
+                    </div>
+                    <div class="Cheky">
+
+                        <label class="option">Carrots
+                        <input   name="Carrots"  formControlName = "carrots" class="checkbox" type="checkbox">
+                        <span class="checkmark"></span></label>
+                    </div>
+                </div>
+
+
+                <div class="divider"></div>
+
+
+                <!-- end of option 1 -->
+
+                <div class="checkboxContain">
+                    <div  class="imageSupport"><img  id="greenBeans" src="../../../assets/Q1/greenBeans.png" alt="">
+                    </div>
+                    <div class="Cheky">
+
+                        <label class="option">Green Beans
+                        <input  formControlName = "greenBeans"  class="checkbox" type="checkbox">
+                        <span class="checkmark"></span></label>
+                    </div>
+                </div>
+
+
+                <div class="divider"></div>
+
+                                <!-- end of option 2 -->
+
+
+                <div class="checkboxContain">
+                    <div class="imageSupport"><img  id="brocoli" src="../../../assets/Q1/brocoli.png" alt="">
+                    </div>
+                    <div class="Cheky">
+
+                        <label class="option">Broccoli
+                        <input   formControlName = "brocoli"  class="checkbox" type="checkbox">
+                        <span class="checkmark"></span></label>
+                    </div>
+                </div>
+
+
+                <div class="divider"></div>
+
+                                                <!-- end of option 3 -->
+
+
+                <div class="checkboxContain">
+                    <div class="imageSupport"><img id="zuchhini" src="../../../assets/Q1/zuchhini.png" alt="">
+                    </div>
+                    <div class="Cheky">
+
+                        <label class="option">Zucchini
+                        <input  formControlName = "zuchhini"  class="checkbox" type="checkbox">
+                        <span class="checkmark"></span></label>
+                    </div>
+                </div>
+                <div class="divider"></div>
+
+
+                 <!-- end of option 4 -->
+
+
+
+                <div class="checkboxContain">
+                    <div class="imageSupport"><img id="cucumber" src="../../../assets/Q1/cucumber.png" alt="">
+                    </div>
+                    <div class="Cheky">
+
+                        <label class="option">Cucumber 
+                        <input  formControlName = "cucumber"  class="checkbox" type="checkbox">
+                        <span class="checkmark"></span></label>
+                    </div>
+                </div>
+
+
+                <div class="divider"></div>
+
+                                 <!-- end of option 5 -->
+
+                                 
+<!-- 
+                <div class="checkboxContain">
+                    <div class="imageSupport"><img id="cucumber" src="../../../assets/Q1/cucumber.png" alt="">
+                    </div>
+                    <div class="Cheky">
+
+                        <label class="option">Cucumber 
+                        <input  formControlName = "Cucumber"  class="checkbox" type="checkbox">
+                        <span class="checkmark"></span></label>
+                    </div>
+                </div>
+
+
+                <div class="divider"></div> -->
+
+                                 <!-- end of option 6 -->
+
+         
+                                 
+
+
+                                 
+
+           </div>
+
+
+
+           <div class="next">
+               <h1 (click)="next()">Next</h1>
+               <button  type="submit" class="submit" ><div class="submit-logo"></div>
+               </button>
+           </div>
+
+
+
+
+     </div>
+    </form>
+
+
+
+
+     <!-- End of Q1 -->
+
+     <form  [formGroup]="prefFruit" (ngSubmit)="Fruits()"  (ngSubmit)="next()">
+
+     <div class="Q2" *ngIf="indexOf==2">
+
+        <br>
+        
+        <div id="firstLine"></div>
+        <h1 id="question">What Fruits are your favorites?</h1>
+        <h6 id="question-slc">Select your favorites </h6>
+
+            <div class="form-scroll">
+
+                <div class="checkboxContain">
+                    <div class="imageSupport"><img  id="bananas" src="../../../assets/Q2/bananas.png" alt="">
+                    </div>
+                    <div class="Cheky">
+
+                        <label class="option">Bananas
+                        <input    formControlName = "bananas"   class="checkbox" type="checkbox">
+                        <span class="checkmark"></span></label>
+                    </div>
+                </div>
+
+
+                <div class="divider"></div>
+
+
+                <!-- end of option 1 -->
+
+                <div class="checkboxContain">
+                    <div  class="imageSupport"><img  id="apples" src="../../../assets/Q2/Apples.png" alt="">
+                    </div>
+                    <div class="Cheky">
+
+                        <label class="option">Apples
+                        <input     formControlName = "apples" class="checkbox" type="checkbox">
+                        <span class="checkmark"></span></label>
+                    </div>
+                </div>
+
+
+                <div class="divider"></div>
+
+                                <!-- end of option 2 -->
+
+
+                <div class="checkboxContain">
+                    <div class="imageSupport"><img  id="kiwi" src="../../../assets/Q2/kiwi.png" alt="">
+                    </div>
+                    <div class="Cheky">
+
+                        <label class="option">Kiwi
+                        <input formControlName = "kiwi" class="checkbox" type="checkbox">
+                        <span class="checkmark"></span></label>
+                    </div>
+                </div>
+
+
+                <div class="divider"></div>
+
+                                                <!-- end of option 3 -->
+
+
+                <div class="checkboxContain">
+                    <div class="imageSupport"><img id="orange" src="../../../assets/Q2/orange.png" alt="">
+                    </div>
+                    <div class="Cheky">
+
+                        <label class="option">Orange
+                        <input  formControlName = "orange" class="checkbox" type="checkbox">
+                        <span class="checkmark"></span></label>
+                    </div>
+                </div>
+                <div class="divider"></div>
+
+
+                 <!-- end of option 4 -->
+
+
+
+                <div class="checkboxContain">
+                    <div class="imageSupport"><img id="cucumber" src="../../../assets/Q2/peaches.png" alt="">
+                    </div>
+                    <div class="Cheky">
+
+                        <label class="option">Peaches 
+                        <input  formControlName = "peaches" class="checkbox" type="checkbox">
+                        <span class="checkmark"></span></label>
+                    </div>
+                </div>
+
+
+                <div class="divider"></div>
+
+                 <!-- end of option 5 -->
+
+                 <div class="checkboxContain">
+                  <div class="imageSupport"><img id="cucumber" src="../../../assets/Q2/peaches.png" alt="">
+                  </div>
+                 <div class="Cheky">
+                
+                 <label class="option">Peaches 
+                 <input  formControlName = "peaches" class="checkbox" type="checkbox">
+                 <span class="checkmark"></span></label>
+                 </div>
+                 </div>
+                 <div class="divider"></div>
+
+                <!-- end of option 5 -->
+
+           </div>
+
+
+           <div class="next">
+               <h1 (click)="next()">Next</h1>
+               <button  type="submit" class="submit" ><div class="submit-logo"></div>
+               </button>
+           </div>
+
+
+
+
+     </div>
+
+     </form>
+     
+
+          <!-- End of Q2 -->
+
+        <form  [formGroup]="ingred" (ngSubmit)="Ningreds()"  (ngSubmit)="next()">
+
+        <div class="Q3" *ngIf="indexOf==3">
+
+            <br>
+        
+          <div class="q3Top">
+              <img src="../../../assets//Q3/sketch1.png">
+              <h1>How much Ingredients <br>do you prefer ?</h1>
+          </div>
+            
+          <div class="q3Top_2">
+
+            <br>
+        
+       
+
+             <div class="radio-toolbar">
+
+                <input  type="radio"   formControlName = "ing"  name="ing" id="radioApple" value="7" >
+                <label for="radioApple">
+                    <div class="number"><p>7</p></div>
+                   <p>Ingredients per meal</p> 
+                </label>
+
+            
+                <input  type="radio"  formControlName = "ing"    name="ing"  id="radioApple2"  value="5" >
+                <label for="radioApple2">
+                    <div class="number"><p>5</p></div>
+                   <p>Ingredients per meal</p> 
+
+                </label>
+
+                <input  type="radio"  formControlName = "ing"   name="ing" type="radio" id="radioApple3" value="4" >
+                <label for="radioApple3">
+                    <div class="number"><p>4</p></div>
+                   <p>Ingredients per meal</p> 
+
+                </label>
+
+
+            </div>
+
+
+            
+           <div class="next">
+            <h1 (click)="next()" id="next_orange" style="color: white;">Next</h1>
+            <button  id="submit_orange" type="submit" style="background-color: white;" class="submit" ><div class="submit-logo-white"><img src="../../../assets/Q3/arrow.png"></div>
+            </button>
+           </div>
+
+
+        </div>
+        </div>
+        </form>
+
+
+        <!-- End of Q3 -->
+
+
+        <form  [formGroup]="prefDie" (ngSubmit)="Diet()"  (ngSubmit)="next()">
+         <div  class="Q4" *ngIf="indexOf==4">
+
+
+                <br>
+                
+                <div id="firstLine"></div>
+                <h1 id="question" style="text-align: center;">What Type Of diet  you like ? </h1>
+                <h6 id="question-slc">Select your favorites </h6>
+        
+                    <div class="form-scroll">
+        
+                        <div class="checkboxContain">
+                          <img  id="High-Protein" src="../../../assets/Q4/HighProtiene.png" alt="">
+                         
+                            <div class="Cheky">
+        
+                                <label class="option">High-Protein
+                                <input  formControlName = "highProtein" class="checkbox" type="checkbox">
+                                <span class="checkmark"></span></label>
+                            </div>
+                        </div>
+        
+        
+                        <div class="divider"></div>
+        
+        
+                        <!-- end of option 1 -->
+        
+                        <div class="checkboxContain">
+                            <img  id="High-Fiber" src="../../../assets/Q4/HighFiber.png" alt="">
+                            <div class="Cheky">
+        
+                                <label class="option">High-Fiber
+                                <input   formControlName = "highFiber"  class="checkbox" type="checkbox">
+                                <span class="checkmark"></span></label>
+                            </div>
+                        </div>
+        
+        
+                        <div class="divider"></div>
+        
+                        <!-- end of option 2 -->
+        
+        
+                        <div class="checkboxContain">
+                            <img  id="lowFat" src="../../../assets/Q4/lowFat.png" alt="">
+                            <div class="Cheky">
+        
+                                <label class="option">Low-fat
+                                <input  formControlName = "lowFat"  class="checkbox" type="checkbox">
+                                <span class="checkmark"></span></label>
+                            </div>
+                        </div>
+        
+        
+                        <div class="divider"></div>
+        
+                         <!-- end of option 3 -->
+        
+        
+                        <div class="checkboxContain">
+                            <img id="lowCarb" src="../../../assets/Q4/lowCarb.png" alt="">
+                            <div class="Cheky">
+        
+                                <label class="option">Low-carb
+                                <input formControlName = "lowCarb" class="checkbox" type="checkbox">
+                                <span class="checkmark"></span></label>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+        
+        
+                         <!-- end of option 4 -->
+        
+        
+        
+                        <div class="checkboxContain">
+                            <img id="lowSodium" src="../../../assets/Q4/lowSodium.png" alt="">
+                            <div class="Cheky">
+        
+                                <label class="option">Low-sodium 
+                                <input  formControlName = "lowSodium" class="checkbox" type="checkbox">
+                                <span class="checkmark"></span></label>
+                            </div>
+                        </div>
+        
+        
+                        <div class="divider"></div>
+        
+                         <!-- end of option 5 -->
+        
+        
+                        <!-- end of option 5 -->    
+                   </div>
+        
+        
+                   <div class="next">
+                       <h1 (click)="next()">Next</h1>
+                       <button  type="submit" class="submit" ><div class="submit-logo"></div>
+                       </button>
+                   </div>
+        
+        
+        
+        
+
+         </div>
+        </form>
+            <!-- End OF Q4 -->
+
+            <form  [formGroup]="prefCuisineTyp" (ngSubmit)="cuisineType()"  (ngSubmit)="next()">
+            <div  class="Q5" *ngIf="indexOf==5">
+
+
+                                <br>
+                                
+                                <div id="firstLine"></div>
+                                <h1 id="question" style="text-align: center;">Which CuisineType you like ?</h1>
+                                <h6 id="question-slc">Select your favorites </h6>
+                        
+                                    <div class="form-scroll">
+                        
+                                        <div class="checkboxContain">
+                                          <img  id="French" src="../../../assets/Q5/french.png" alt="">
+                                         
+                                            <div class="Cheky">
+                        
+                                                <label class="option">French
+                                                <input   formControlName = "french" class="checkbox" type="checkbox">
+                                                <span class="checkmark"></span></label>
+                                            </div>
+                                        </div>
+                        
+                        
+                                        <div class="divider"></div>
+                        
+                        
+                                        <!-- end of option 1 -->
+                        
+                                        <div class="checkboxContain">
+                                            <img  id="Italian" src="../../../assets/Q5/Italian.png" alt="">
+                                            <div class="Cheky">
+                        
+                                                <label class="option">Italian
+                                                <input  formControlName = "italian"  class="checkbox" type="checkbox">
+                                                <span class="checkmark"></span></label>
+                                            </div>
+                                        </div>
+                        
+                        
+                                        <div class="divider"></div>
+                        
+                                        <!-- end of option 2 -->
+                        
+                        
+                                        <div class="checkboxContain">
+                                            <img  id="Mexican" src="../../../assets/Q5/mexican.png" alt="">
+                                            <div class="Cheky">
+                        
+                                                <label class="option">Mexican
+                                                <input  formControlName = "mexican" class="checkbox" type="checkbox">
+                                                <span class="checkmark"></span></label>
+                                            </div>
+                                        </div>
+                        
+                        
+                                        <div class="divider"></div>
+                        
+                                         <!-- end of option 3 -->
+                        
+                        
+                                        <div class="checkboxContain">
+                                            <img id="Nordic" src="../../../assets/Q5/nordic.png" alt="">
+                                            <div class="Cheky">
+                        
+                                                <label class="option">Nordic
+                                                <input  formControlName = "nordic" class="checkbox" type="checkbox">
+                                                <span class="checkmark"></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="divider"></div>
+                        
+                        
+                                         <!-- end of option 4 -->
+                        
+                        
+                        
+                                        <div class="checkboxContain">
+                                            <img id="Morrocan" src="../../../assets/Q5/morrocan.png" alt="">
+                                            <div class="Cheky">
+                        
+                                                <label class="option">Morrocan
+                                                <input  formControlName = "mediterranean"  class="checkbox" type="checkbox">
+                                                <span class="checkmark"></span></label>
+                                            </div>
+                                        </div>
+                        
+                        
+                                        <div class="divider"></div>
+                        
+                                         <!-- end of option 5 -->
+                        
+                        
+                                        <!-- end of option 5 -->    
+                                   </div>
+                        
+                        
+                                   <div class="next">
+                                       <h1 (click)="next()">Next</h1>
+                                       <button  type="submit" class="submit" ><div class="submit-logo"></div>
+                                       </button>
+                                   </div>
+                        
+                        
+                        
+                        
+                
+             </div>
+            </form>
+                         
+
+             <!-- END OF QUESTION 5  -->
+
+             <form  [formGroup]="prefDishTyp" (ngSubmit)="DishType()"  (ngSubmit)="next()">
+             <div  class="Q6" *ngIf="indexOf==6">
+
+
+                <br>
+                
+                <div id="firstLine"></div>
+                <h1 id="question" style="text-align: center;">What dishtype You like Usually ?</h1>
+                <h6 id="question-slc">Select your favorites </h6>
+        
+                    <div class="form-scroll">
+        
+                        <div class="checkboxContain">
+
+                          <div class="imageSupport"><img  id="Bread" src="../../../assets/Q6/Bread.png" alt=""></div>
+                         
+                            <div class="Cheky">
+        
+                                <label class="option">Bread
+                                <input    formControlName = "bread"   class="checkbox" type="checkbox">
+                                <span class="checkmark"></span></label>
+                            </div>
+                        </div>
+        
+        
+                        <div class="divider"></div>
+        
+        
+                        <!-- end of option 1 -->
+        
+                        <div class="checkboxContain">
+
+                            <div class="imageSupport"><img  id="Soup" src="../../../assets/Q6/Soup.png" alt=""></div>
+
+
+                            <div class="Cheky">
+        
+                                <label class="option">Soup
+                                <input formControlName = "soup"    class="checkbox" type="checkbox">
+                                <span class="checkmark"></span></label>
+                            </div>
+                        </div>
+        
+        
+                        <div class="divider"></div>
+        
+                        <!-- end of option 2 -->
+        
+        
+                        <div class="checkboxContain">
+                            
+                            <div class="imageSupport"><img  id="Drnks" src="../../../assets/Q6/Drinks.png" alt=""></div>
+
+                            <div class="Cheky">
+        
+                                <label class="option">Drinks
+                                <input formControlName = "drinks"  class="checkbox" type="checkbox">
+                                <span class="checkmark"></span></label>
+                            </div>
+                        </div>
+        
+        
+                        <div class="divider"></div>
+        
+                         <!-- end of option 3 -->
+        
+        
+                        <div class="checkboxContain">
+
+
+                            <div class="imageSupport"><img  id="Salad" src="../../../assets/Q6/Salad.png" alt=""></div>
+
+
+                            <div class="Cheky">
+        
+                                <label class="option">Salad
+                                <input  formControlName = "salad" class="checkbox" type="checkbox">
+                                <span class="checkmark"></span></label>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+        
+        
+                         <!-- end of option 4 -->
+        
+        
+        
+                        <div class="checkboxContain">
+
+                            
+                            <div class="imageSupport"><img  id="Sandwich" src="../../../assets/Q6/Sandwich.png" alt=""></div>
+
+                            <div class="Cheky">
+        
+                                <label class="option">Sandwiches
+                                <input   formControlName = "sandwiches"  class="checkbox" type="checkbox">
+                                <span class="checkmark"></span></label>
+                            </div>
+                        </div>
+        
+        
+                        <div class="divider"></div>
+        
+                         <!-- end of option 5 -->
+        
+        
+                        <!-- end of option 5 -->    
+                   </div>
+        
+        
+                   <div class="next">
+                       <h1 (click)="next()">Next</h1>
+                       <button type="submit" class="submit" ><div class="submit-logo"></div>
+                       </button>
+                   </div>
+
+        </div>
+    </form>
+
+
+        
+            <!-- END OF QUESTION 6 -->
+
+        <form  [formGroup]="mainMealTyp" (ngSubmit)="MealType()"  (ngSubmit)="next()">
+
+        <div class="Q7" *ngIf="indexOf==7">
+
+            <br>
+        
+          <div class="q3Top">
+              <img  id="timeSketch" src="../../../assets/Q7/Sketch.png">
+              <h1>What is Your main<br>mealType?</h1>
+          </div>
+            
+          <div class="q3Top_2">
+
+            <br>
+        
+       
+
+             <div class="radio-toolbar">
+
+                <input type="radio" id="radioApple"  name="meal" formControlName = "meal" value="breakfeast" >
+                <label for="radioApple">
+                    <div class="number"><p>A</p></div>
+                   <p>Breakfeast</p> 
+                </label>
+            
+                <input type="radio" id="radioApple2" name="meal"  formControlName = "meal" value="lunch" >
+                <label for="radioApple2">
+                    <div class="number"><p>B</p></div>
+                   <p>Lunch</p> 
+
+                </label>
+
+                <input type="radio" id="radioApple3"  name="meal" formControlName = "meal" value="dinner" >
+                <label for="radioApple3">
+                    <div class="number"><p>C</p></div>
+                   <p>Dinner</p> 
+
+                </label>
+
+
+            </div>
+
+
+            
+           <div class="next">
+            <h1 (click)="next()" id="next_orange" style="color: white;">Next</h1>
+            <button  id="submit_orange" type="submit" style="background-color: white;" class="submit" ><div class="submit-logo-white"><img src="../../../assets/Q3/arrow.png"></div>
+            </button>
+           </div>
+
+
+        </div>
+        </div>
+
+        </form>
+
+
+
+                    <!-- END    OF QUESTION 7 -->
+
+                    <form  [formGroup]="eatMea" (ngSubmit)="Meat()"  (ngSubmit)="next()">
+                    <div class="Q8" *ngIf="indexOf==8">
+
+                        <br>
+                    
+                      <div class="q3Top">
+                          <img id="versus" src="../../../assets/Q8/vs.png">
+                          <h1 style="margin-top: 0px;">Do you eat meat  ?</h1>
+                          <div class="scoreBoard">
+                              <p>0:0</p>
+                              <div class="SubScoreBoard">Who is gonna win ?</div>
+
+                          </div>
+                      </div>
+
+
+
+
+
+                        
+                      <div class="q3Top_2">
+            
+                        <br>
+                    
+                   
+            
+                         <div class="radio-toolbar" id="radioMeat">
+            
+                            <input type="radio" id="radioApple" formControlName = "meat"  name="meat" value="true" >
+                            <label for="radioApple">
+                                <div class="number"><img id="Validate" src="../../../assets/Q8/validate.png"></div>
+                               <p>Yes (Team meat)</p> 
+                            </label>
+                        
+                            <input type="radio" id="radioApple2"  formControlName = "meat"  name="meat"  value="false" >
+                            <label for="radioApple2">
+                                <div class="number"><img id="nonValidate" src="../../../assets/Q8/nonValidate.png"></div>
+                               <p>No (Team Veggies)</p> 
+            
+                            </label>
+            
+                         
+            
+            
+                        </div>
+            
+            
+                        
+                       <div  id="teamMeat" class="next">
+                        <h1 (click)="next()" id="next_orange" style="color: white;">Next</h1>
+                        <button  id="submit_orange" type="submit" style="background-color: white;" class="submit" ><div class="submit-logo-white"><img src="../../../assets/Q3/arrow.png"></div>
+                        </button>
+                       </div>
+            
+            
+                    </div>
+                    </div>
+                    </form>
+
+                        <!-- END    OF QUESTION 8 -->
+
+                        <form  [formGroup]="disease" (ngSubmit)="Ndiseases()"  (ngSubmit)="next()">
+
+                        <div  class="Q9" *ngIf="indexOf==9">
+
+
+                            <br>
+                            
+                            <div id="firstLine"></div>
+                            <h1 id="question" style="text-align: center;">Any other things we need to know?</h1>
+                            <h6 id="question-slc">Select your favorites </h6>
+                    
+                                <div class="form-scroll">
+                    
+                                    <div class="checkboxContain">
+            
+                                      <div class="imageSupport"><img  id="Alco" src="../../../assets/Q9/Alco.png" alt=""></div>
+                                     
+                                        <div class="Cheky">
+                    
+                                            <label class="option">I dont Drink Alcohol
+                                            <input  formControlName = "alcohol"   class="checkbox" type="checkbox">
+                                            <span class="checkmark"></span></label>
+                                        </div>
+                                    </div>
+                    
+                    
+                                    <div class="divider"></div>
+                    
+                    
+                                    <!-- end of option 1 -->
+                    
+                                    <div class="checkboxContain">
+            
+                                        <div class="imageSupport"><img  id="Diabets" src="../../../assets/Q9/Diabets.png" alt=""></div>
+            
+            
+                                        <div class="Cheky">
+                    
+                                            <label class="option">I have Diabets
+                                            <input   formControlName = "diabets"  class="checkbox" type="checkbox">
+                                            <span class="checkmark"></span></label>
+                                        </div>
+                                    </div>
+                    
+                    
+                                    <div class="divider"></div>
+                    
+                                    <!-- end of option 2 -->
+                    
+                    
+                                    <div class="checkboxContain">
+                                        
+                                        <div class="imageSupport"><img  id="Gluten" src="../../../assets/Q9/gluten.png" alt=""></div>
+            
+                                        <div class="Cheky">
+                    
+                                            <label class="option"> I Have a Gluten Intolerance
+                                            <input     formControlName = "gluten" class="checkbox" type="checkbox">
+                                            <span class="checkmark"></span></label>
+                                        </div>
+                                    </div>
+                    
+                    
+                                    <div class="divider"></div>
+                    
+                                     <!-- end of option 3 -->
+                    
+                    
+                                    <div class="checkboxContain">
+            
+            
+                                        <div class="imageSupport"><img  id="Kidney" src="../../../assets/Q9/Kidney.png" alt=""></div>
+            
+            
+                                        <div class="Cheky">
+                    
+                                            <label class="option">I need Kidney friendly food	
+                                            <input     formControlName = "kidney" class="checkbox" type="checkbox">
+                                            <span class="checkmark"></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                    
+                    
+                                     <!-- end of option 4 -->
+                    
+                    
+                    
+                                    <div class="checkboxContain">
+            
+                                        
+                                        <div class="imageSupport"><img  id="Pork" src="../../../assets/Q9/Pork.png" alt=""></div>
+            
+                                        <div class="Cheky">
+                    
+                                            <label class="option">I dont eat pork
+                                            <input      formControlName = "pork" class="checkbox" type="checkbox">
+                                            <span class="checkmark"></span></label>
+                                        </div>
+                                    </div>
+                    
+                    
+                                    <div class="divider"></div>
+                    
+                                     <!-- end of option 5 -->
+                    
+                    
+                                    <!-- end of option 5 -->    
+                               </div>
+                    
+                    
+                               <div class="next">
+                                   <h1 (click)="next()">Next</h1>
+                                   <button  type="submit" class="submit" ><div class="submit-logo"></div>
+                                   </button>
+                               </div>
+                    </div>
+                    </form>
+                    <!-- END OF QUESTION 9 -->
+                    
+                    <form  [formGroup]="physicallyActiv" (ngSubmit)="pActive()"  (ngSubmit)="next()">
+
+                    
+                    <div class="Q10" *ngIf="indexOf==10">
+
+                        <br>
+                    
+                      <div  id="PhysicActiv" class="q3Top">
+                          <img id="PyhsicSketch" src="../../../assets/Q10/sketch.png">
+                          <h1 style="margin-top: 0px;">Are You Physically Active ?</h1>
+
+                      </div>
+
+
+
+
+
+                        
+                      <div class="q3Top_2">
+            
+                        <br>
+                    
+                   
+            
+                         <div class="radio-toolbar" id="radioMeat">
+            
+                            <input   formControlName = "pActi" name="pActi" type="radio" id="radioApple" value="true" >
+                            <label for="radioApple">
+                                <div class="number"><img id="Validate" src="../../../assets/Q8/validate.png"></div>
+                               <p>Yes</p> 
+                            </label>
+                        
+                            <input  formControlName = "pActi" name="pActi" type="radio" id="radioApple2" value="false" >
+                            <label for="radioApple2">
+                                <div class="number"><img id="nonValidate" src="../../../assets/Q8/nonValidate.png"></div>
+                               <p>No</p> 
+            
+                            </label>
+            
+                         
+            
+            
+                        </div>
+            
+            
+                        
+                       <div  id="teamMeat" class="next">
+                        <h1 (click)="next()" id="next_orange" style="color: white;">Next</h1>
+                        <button  type="submit" id="submit_orange"  style="background-color: white;" class="submit" ><div class="submit-logo-white"><img src="../../../assets/Q3/arrow.png"></div>
+                        </button>
+                       </div>
+            
+            
+                    </div>
+                    </div>
+
+                    </form>
+
+                    <!-- END OF QUESTION 10 -->
+
+        <form  [formGroup]="exercisesPeerWeekFre" (ngSubmit)="exercisesPeerWeek()"  (ngSubmit)="next()">
+                    
+        <div class="Q11" *ngIf="indexOf==11">
+
+        
+        
+          <div  id="train" class="q3Top">
+              <img  id="trainSketch" src="../../../assets/Q11/sketch.png">
+              <h1>How often could you<br>exercise?</h1>
+          </div>
+            
+          <div class="q3Top_2">
+
+            <br>
+        
+       
+
+             <div class="radio-toolbar">
+
+                <input formControlName = "exercice" name="exercice"  type="radio" id="radioApple"  value="2" >
+                <label for="radioApple">
+                    <div class="number"><p>2</p></div>
+                   <p>Times a week</p> 
+                </label>
+            
+                <input formControlName = "exercice"  name="exercice" type="radio" id="radioApple2"  value="3" >
+                <label for="radioApple2">
+                    <div class="number"><p>3</p></div>
+                   <p>Times a week</p> 
+
+                </label>
+
+                <input  formControlName = "exercice"   name="exercice" type="radio" id="radioApple3"  value="4" >
+                <label for="radioApple3">
+                    <div class="number"><p>4</p></div>
+                   <p>Times a week</p> 
+
+                </label>
+
+
+            </div>
+
+
+            
+           <div class="next">
+            <h1 (click)="next()" id="next_orange" style="color: white;">Next</h1>
+            <button   type="submit" id="submit_orange"  style="background-color: white;" class="submit" ><div class="submit-logo-white"><img src="../../../assets/Q3/arrow.png"></div>
+            </button>
+           </div>
+
+
+        </div>
+        </div>
+        </form>
+
+
+
+
+    <!-- END OF QUESTION 11 -->
+
+    <form  [formGroup]="bodyFa" (ngSubmit)="bodyFatt()"  (ngSubmit)="next()">
+
+    <div class="Q12" *ngIf="indexOf==12">
+
+        
+        
+        <div  id="train" class="q3Top">
+            <img  id="bodyFat" src="../../../assets/Q12/bodyFat.png">
+            <h1>Select Your Body Fat Level</h1>
+        </div>
+          
+        <div class="q3Top_2">
+
+        <div class="Imc">
+            {{value}}%
+        </div>
+
+           
+            
+            <div class="range-slider">
+            <input     formControlName = "bodyFat"
+            [(ngModel)]="value"   placeholder="name" class="range-slider__range" type="range" value="40" min="0" max="60">
+            </div>
+          
+         <div class="next">
+          <h1 (click)="next()" id="next_orange" style="color: white;">Next</h1>
+          <button  id="submit_orange" type="submit" style="background-color: white;" class="submit" ><div class="submit-logo-white"><img src="../../../assets/Q3/arrow.png"></div>
+          </button>
+         </div>
+
+
+      </div>
+      </div>
+    
+      </form>
+      <!-- END OF QUESTION 12  -->
+
+      <form  [formGroup]="additionalInfo"   (ngSubmit)="Infos()"    (ngSubmit)="FinalSubmit()" (ngSubmit)="next()">
+
+
+      <div class="container2"> 
+            <input    formControlName = "age"  autocomplete="off" type="text" id="username"  placeholder="Age">
+            <input     formControlName = "height"  autocomplete="off" type="text" id="email"  placeholder="Height (cm)">
+
+            <input    formControlName = "weight"  autocomplete="off"   id="password"   placeholder="Weight (cm)">
+            <input   formControlName = "Dweight"   autocomplete="off"  id="password"  placeholder="Desired Weight (cm)">
+
+           
+            <div id="lastSubmit" class="next">
+                <h1 id="lastSubmitTitre" (click)="next()">Submit</h1>
+                <button  id="submitButton"  type="submit"  class="submit" ><div class="submit-logo"></div>
+                </button>
+            </div>
+ 
+ 
+
+
+
+
+
+
+
+
+    </div>
+</form>
+
+
+    </div>
+
+
+
+    
+</div>
+

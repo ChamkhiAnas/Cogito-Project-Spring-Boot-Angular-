@@ -1,0 +1,43 @@
+<div class="container">
+
+    <div class="circle">
+
+
+
+
+    </div>
+
+
+    <div class="logo"></div>
+    <div class="cogito">Dubito, ergo cogito, ergo sum</div>
+
+
+    <div class="container2"> 
+
+        <form   [formGroup]="SingUp" (ngSubmit)="onSubmit()" >
+
+            <input   formControlName = "userName" autocomplete="off" type="text" id="username" name="userName"  placeholder="Username">
+            <input  formControlName = "email"  autocomplete="off" type="text" id="email" name="email"  placeholder="Email">
+
+            <input  formControlName = "password"  autocomplete="off"  type="password" id="password" name="password"  placeholder="Password">
+            <input  formControlName = "cPassword"  autocomplete="off" type="password" id="password" name="password"  placeholder="Confirm Password">
+
+
+            <div class="form-container">
+
+                <label class="signIn">Sign Up</label>
+               
+                <button  class="submit" type="submit"><div class="submit-logo"></div>
+                </button>
+
+
+                <label class="signUp"><a href="#">Sign In</a></label>
+
+
+
+            </div>
+        </form>
+
+
+    </div>
+</div>

@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    }
+    .contain{
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: 616px;
+        background-color: #fcf9f4;
+        border-top: 11px solid #fe6340;
+    }
+    #logo {
+        display: none;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        top: 36px;
+        right: 47.5%;
+        z-index: 2;
+    }
+    
+    .rightSideNav{
+        display: grid;
+    }
+    .rightSideNav>p{
+        font-family: "poppins";
+        font-weight: 900;
+        font-size: 17px;
+        color: #fe6340;
+        justify-self: end;
+        margin-right: 22px;
+        margin-top: 39px;
+        margin-bottom: 0px;
+    }
+    .rightSide{
+        
+        background-image: url("../../../assets/Ono_Hero_1.jpg"); /* The image used */
+        background-color: #cccccc;
+        height: 616px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    .rightSide1{
+        
+        background-image: url("../../../assets/Ono_Hero_2.jpg"); /* The image used */
+        background-color: #cccccc;
+        height: 616px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    
+    .rightSide2{
+        
+        background-image: url("../../../assets/Ono_Hero_3.jpg"); /* The image used */
+        background-color: #cccccc;
+        height: 616px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    
+    #arrow{
+        margin-top: 0px;
+        font-weight: 900;
+        font-family: "poppins";
+        font-weight: 900;
+        font-size: 30px;
+    
+    }
+    .leftSidenav{
+        display: grid;
+        grid-template-columns:repeat(7,1fr);
+    }
+    .leftSidenav>p{
+        font-family: "poppins";
+        font-weight: 400;
+        font-size: 17px;
+        color: black;
+        justify-self: end;
+        margin-left: 22px;
+        margin-top: 39px;
+        margin-bottom: 0px;
+        OPACITY: 50%;   
+    }
+    
+    .leftsidetext{    
+        margin-top: 201px;
+        text-align: center;
+    }
+    
+    .leftsidetext>h6 {
+        font-family: "poppins";
+        font-weight: 100;
+        font-size: 18px;
+        margin-bottom: 0px;
+        opacity: 65%;
+        padding-bottom: 18px;
+    
+    }
+    
+    
+    .animatedpara>h1{
+    
+        margin-top: 12px;
+        font-size: 28px;
+        font-weight: 700;
+        color: black;
+        font-family: "poppins";
+        opacity: 80%;
+    
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        /* border-right: .15em solid orange;  */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 2.3s steps(40, end),
+          blink-caret .75s step-end infinite
+    
+    }
+    
+    .line{ 
+    
+        border-top: 1px solid black;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+    
+      @media only screen and (max-width: 1226px) {
+    
+        .leftSidenav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        }
+        .leftSidenav>p{
+            justify-self: center;
+        }
+           
+    }
+    
+    
+    @media only screen and (max-width: 950px) {
+    
+        .contain{
+            grid-template-columns:none;
+    
+            grid-template-rows: 1fr 1fr;
+        }
+    
+        .line {
+            margin-bottom: 100px;
+        }
+    
+    }
+    a{
+        text-decoration: none;
+        color: black ;
+    }
+
+    
+textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+
+#surveylink{
+
+    color: #fe6340;
+}

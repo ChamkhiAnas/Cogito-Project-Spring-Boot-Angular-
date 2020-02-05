@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+@import  "~@angular/material/prebuilt-themes/indigo-pink.css";
+@font-face {
+  font-family: 'Poppins-thin';
+  src: url('../src/assets/fonts/Poppins-Thin.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Poppins-semiBold';
+  src: url("../src/assets/fonts/Poppins-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Poppins-medium';
+  src: url("../src/assets/fonts/Poppins-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Poppins-regular';
+  src: url("../src/assets/fonts/Poppins-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url("../src/assets/fonts/Poppins-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Poppins-light';
+  src: url("../src/assets/fonts/Poppins-Light.otf") format("opentype");
+}
+
+
+
+
+:root {
+
+
+  --color-text: #fff;
+	--color-bg: #252525;
+	--color-link: #fff;
+	--color-link-hover: #f20c40;
+	--color-bg-item1: #15171b;
+	--color-bg-item2: #2c35b7;
+	--color-bg-item3: #0f1013;
+	--color-bg-item4: #1d2027;
+	--color-bg-item5: #0f1013;
+	--color-item-alt: #494d54;
+	--color-quote: #5b677a;
+	--color-info: #57535a;
+	--color-title: #e23434;
+	--color-tagline: #e2e2e2;
+
+
+    --bg-color:#f0f0f0;
+    --p-color:#ffe8da;
+    --s-color:#ffece1;
+    --b-color:#fe9071;
+    --f-color:#000000;
+    --white:white;
+    --q:#05103a;
+
+    --bg-q:#fdf0e3;
+    --bg-q1:#fdf4eb;
+    --slc:#ced0d8;
+
+
+    --f-thin:"Poppins-thin";
+    --f-semiBold:"Poppins-semiBold";
+    --f-medium:"Poppins-medium";
+    --f-regular:"Poppins-regular";
+    --f-bold:"Poppins-Bold";
+    --f-light:"Poppins-light";
+
+
+
+
+
+    
+
+
+
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    margin: 0px;
+  }
+

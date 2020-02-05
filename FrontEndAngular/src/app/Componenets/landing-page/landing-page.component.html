@@ -1,0 +1,64 @@
+
+<div class="contain">
+    <img id="logo" src="../assets/logo3.png">
+  
+    <div class="leftSide">
+      <div class="leftSidenav">
+        <p><a  [routerLink]="[ '/login']">Sign In</a></p>
+        <p> <a  [routerLink]="[ '/signUp']">
+          Sign Up 
+  
+        </a></p>
+      </div>
+  
+      <div class="leftsidetext">
+  
+        <h6>Cogito is</h6>
+        <div class="animatedpara">
+  
+          <h1 *ngIf="textIndex==0">Zero Waste</h1>
+          <h1 *ngIf="textIndex==1">Zero Bullsh*t</h1>
+          <h1 *ngIf="textIndex==2">The Solution</h1>
+          <h1 *ngIf="textIndex==3">The Future</h1>
+  
+  
+  
+        
+        </div>
+        <div class="line"></div>
+      </div>
+  
+    </div>
+  
+  
+    <div  *ngIf="index==0" class="rightSide">
+      <div class="rightSideNav">
+        <p><a   id="surveylink" [routerLink]="[ '/Survey']">Get Started</a>
+        </p>
+        <p id="arrow">      <a   id="surveylink" [routerLink]="[ '/Survey']">   →	 </a>
+        </p>
+      </div>
+    </div>
+  
+  
+    <div  *ngIf="index==1" class="rightSide1">
+      <div class="rightSideNav">
+        <p><a  id="surveylink" [routerLink]="[ '/Survey']">Get Started</a>
+
+            <p id="arrow">      <a   id="surveylink" [routerLink]="[ '/Survey']">   →	 </a>
+            </p>
+    
+      </div>
+  </div>
+  
+  
+  <div  *ngIf="index==2" class="rightSide2">
+    <div class="rightSideNav">
+        <p><a id="surveylink" [routerLink]="[ '/Survey']">Get Started</a>
+            <p id="arrow">      <a   id="surveylink" [routerLink]="[ '/Survey']">   →	 </a>
+            </p>
+    
+    </div>
+  </div>
+  
+  
